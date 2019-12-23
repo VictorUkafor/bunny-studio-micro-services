@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
     },
     state: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
     },
   });
 

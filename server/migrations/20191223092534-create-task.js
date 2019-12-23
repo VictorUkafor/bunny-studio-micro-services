@@ -14,14 +14,15 @@ module.exports = {
       },
       state: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
       },
       userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          model: 'Tasks',
+          model: 'Users',
           key: 'id',
           as: 'userId',
         },
