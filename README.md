@@ -5,10 +5,10 @@
 
 To get started with application download the repo by clicking the green button above or run this command on your terminal
 
-``
+```
 git clone git@github.com:VictorUkafor/bunny-studio-micro-services.git
 
-``
+```
 
 
 ### Prerequisites
@@ -40,18 +40,23 @@ After the installing the required packages. Create an .env file at the root of t
 To run the app, run the following commands on your terminal
 
 (production)
+to run migration:
+```
+./node_modules/.bin/Sequelize db:migrate
+```
+
 to create the build:
-``
+```
 npm run build
-``
+```
 
 to start the app:
-``
+```
 npm run build
-``
+```
 
 (development)
 to create the build:
-``
+```
 npm run build
-``
+```
