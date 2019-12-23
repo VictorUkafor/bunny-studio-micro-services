@@ -1,4 +1,4 @@
 node_modules/
-migrations/
-models/
+server/migrations/
+server/models/
 dist/
