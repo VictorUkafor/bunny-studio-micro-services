@@ -1,7 +1,7 @@
 import { Task } from '../models';
 
 
-// create user
+// creating task
 export const createTask = async (req, res) => {
   const { description } = req.body;
   const { user } = res;
@@ -26,7 +26,7 @@ export const createTask = async (req, res) => {
 };
 
 
-// create user
+// updating task
 export const updateTask = async (req, res) => {
   const { description, state } = req.body;
   const { task } = res;
@@ -51,7 +51,7 @@ export const updateTask = async (req, res) => {
 };
 
 
-// create user
+// deleting task
 export const deleteTask = async (req, res) => {
   const { task, user } = res;
 

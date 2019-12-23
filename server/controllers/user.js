@@ -72,6 +72,7 @@ export const findAllUsers = async (req, res) => {
 };
 
 
+// for deleting a user
 export const destroyUser = async (req, res) => {
   const { user } = res;
 

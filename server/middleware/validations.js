@@ -1,6 +1,8 @@
 import { User, Task } from '../models';
 
 
+// for checking if name was supplied for
+// user creation
 export const nameRequired = (req, res, next) => {
   const { name } = req.body;
 
@@ -16,6 +18,7 @@ export const nameRequired = (req, res, next) => {
 };
 
 
+// for validating description for task creation
 export const descriptionRequired = (req, res, next) => {
   const { description } = req.body;
 
@@ -31,6 +34,8 @@ export const descriptionRequired = (req, res, next) => {
 };
 
 
+// for checking if a user already exist
+// when creating a new user
 export const userExist = async (req, res, next) => {
   const { name } = req.body;
 
@@ -59,6 +64,8 @@ export const userExist = async (req, res, next) => {
 };
 
 
+// for finding a user for either update or 
+// delete purpose
 export const findUser = async (req, res, next) => {
   const { id } = req.params;
 
@@ -89,6 +96,7 @@ export const findUser = async (req, res, next) => {
 };
 
 
+// for finding a task a user's task
 export const findTask = async (req, res, next) => {
   const { taskId } = req.params;
   const { user } = res;
@@ -123,6 +131,8 @@ export const findTask = async (req, res, next) => {
 };
 
 
+// for checking if a user's name exist for 
+// update purpose
 export const nameExist = async (req, res, next) => {
   const { name } = req.body;
   const { user } = res;
