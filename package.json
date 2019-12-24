@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/server/index.js",
-    "dev": "nodemon server/index.js --exec babel-node",
+    "start": "node dist/index.js",
+    "dev": "nodemon index.js --exec babel-node",
     "lint": "eslint . --fix",
     "build": "npm run clean && npm run build-babel",
     "clean": "rm -rf dist && mkdir dist",
-    "build-babel": "babel . --ignore node_modules,test,migrations -d ./dist/server -s --copy-files",
+    "build-babel": "babel . --ignore node_modules,migrations -d ./dist -s --copy-files",
     "post-install": "./node_modules/.bin/Sequelize db:migrate"
   },
   "repository": "git@github.com:VictorUkafor/bunny-studio-micro-services.git",

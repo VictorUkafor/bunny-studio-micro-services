@@ -39,12 +39,13 @@ After the installing the required packages. Create an .env file at the root of t
 
 To run the app, run the following commands on your terminal
 
-(production)
+
 to run migration:
 ```
 ./node_modules/.bin/Sequelize db:migrate
 ```
 
+(production)
 to create the build:
 ```
 npm run build
